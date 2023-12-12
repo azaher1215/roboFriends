@@ -12,8 +12,9 @@ function App () {
 
 useEffect(()=> {
   fetch('https://jsonplaceholder.typicode.com/users')
-  .then(response=> response.json())
-  .then(users => {setRobot(users)});
+    .then(response=> response.json())
+    .then(users => {setRobot(users)});
+  
 },[])
 
 
